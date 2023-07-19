@@ -1,0 +1,21 @@
+pluginManagement {
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+    }
+}
+
+rootProject.name = "Groove Time"
+include ':app'
+include ':auth-sample'
+include ':auth-lib'
+include ':app-remote-lib'
+include ':app-remote-sample'
+include 'spotify-app-remote'
+include ':auth-sample'
+include ':auth-lib'
+include ':app-remote-lib'
+include ':app-remote-sample'
