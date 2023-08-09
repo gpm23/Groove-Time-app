@@ -4,7 +4,6 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        jcenter()
     }
 }
 
@@ -14,8 +13,9 @@ include ':auth-sample'
 include ':auth-lib'
 include ':app-remote-lib'
 include ':app-remote-sample'
-include 'spotify-app-remote'
 include ':auth-sample'
 include ':auth-lib'
+include ':spotify-app-remote'
 include ':app-remote-lib'
 include ':app-remote-sample'
+
