@@ -24,22 +24,15 @@
             android:layout_marginRight="20dp">
 
             <TextView
-                android:layout_width="481dp"
-                android:layout_height="126dp"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
                 android:text="Time to get Groovy!"
                 android:textColor="#FFFFFF"
                 android:textSize="50sp" />
 
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="123dp"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/buttfumble" />
-
-
         </RelativeLayout>
-        
+
         <GridLayout
 
             android:rowCount="3"
@@ -50,42 +43,40 @@
 
 
             <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_width="300dp"
+                android:layout_height="34dp"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:onClick=""
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
                 >
 
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
+                    android:layout_width="349dp"
+                    android:layout_height="match_parent"
                     android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/resource_import"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:src="@drawable/resource_import"
 
                         />
 
 
                     <TextView
 
-                        android:layout_marginTop="12dp"
-                        android:textColor="#000000"
-                        android:textSize="40sp"
-                        android:text="Import Playlist"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-
-
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Import Playlist"
+                        android:textColor="#000000"
+                        android:textSize="40sp" />
 
 
                 </LinearLayout>
@@ -123,6 +114,11 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="66dp"
+            android:src="@drawable/buttfumble" />
 
 
     </LinearLayout>

@@ -34,7 +34,17 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         //signingConfig signingConfigs.debug
-        manifestPlaceholders = [appAuthRedirectScheme: 'com.redirectScheme.comm']
+        manifestPlaceholders = [hostName: "http://localhost:8080"]
+
+    }
+    configurations.all {
+        resolutionStrategy {
+            eachDependency {
+                if ((requested.group == "org.jetbrains.kotlin") && (requested.name.startsWith("kotlin-stdlib"))) {
+                    useVersion("1.8.0")
+                }
+            }
+        }
     }
 
     buildTypes {
